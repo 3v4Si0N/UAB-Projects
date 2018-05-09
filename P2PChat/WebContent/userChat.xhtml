@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>User Chat</title>
+		<h:outputStylesheet library="css" name="bootstrap.min.css"/>
+		<h:outputStylesheet library="css" name="styles.css"/>
+		
+		<h:outputScript library="js" name="websockets.js" />
+		<h:outputScript library="js" name="jquery.js" />
+	</h:head>
+	
+	<body>
+	
+		<div class="container-fluid">		
+			<div class="row justify-content-md-center">
+				<section class="col-xs-12 col-sm-12 col-md-12 col-lg-8 chatbox">
+					<header>
+						<h2 class="text-center">Chatbox with Operator</h2>
+						<hr />
+					</header>
+		            
+		            <h:form prependId="false">
+						<div id="history" class="chatlogs"></div>
+			        </h:form>
+		            
+		            <h:form prependId="false" class="chat-form">
+		                <textarea id="messageToSend" />
+		                <h:commandButton styleClass="btn btn-primary" value="Send" onclick="sendChatMessage(); return false;" />
+		                <h:inputHidden id="channelID" value="#{userLogin.conversationId}"></h:inputHidden>
+		                <h:inputHidden id="username" value="#{userLogin.username}"></h:inputHidden>
+		                <h:inputHidden id="clientType" value="user"></h:inputHidden>
+		            </h:form>
+				</section>
+			</div>
+        </div>
+	
+	</body>
+</html>

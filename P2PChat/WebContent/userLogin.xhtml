@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>User Login</title>
+		<h:outputStylesheet library="css" name="bootstrap.min.css"/>
+		<h:outputStylesheet library="css" name="styles.css"/>
+	</h:head>
+	
+	<body>
+	
+		<section class="container-fluid login-section">
+            <div class="row justify-content-md-center">
+	            <h:form prependId="false" class="col-xs-8 col-sm-4 col-md-4 col-lg-4 thumbnail form-horizontal login-form">
+	                <h4 class="text-center h4-login">User Identification</h4>
+	                <div class="form-group">
+	                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h:inputText styleClass="form-control" value="#{userLogin.username}" p:placeholder="Username" required="true" >
+								<f:ajax event="blur" render="btn-start-chat" />
+							</h:inputText>
+	                    </div>
+	                </div>
+	
+	                <div class="form-group">
+	                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<h:selectOneMenu id="select-category" styleClass="form-control" value="#{userLogin.selectedCategory}" valueChangeListener="#{userLoginC.categoryChanged}">
+								<f:selectItems value="#{userLoginC.categories}" />
+								
+								<f:ajax render="select-subcategory"></f:ajax>
+							</h:selectOneMenu>
+	                    </div>
+	                </div>
+	                
+	                <div class="form-group">
+	                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 dia">
+							<h:selectOneMenu id="select-subcategory" styleClass="form-control" value="#{userLogin.selectedSubCategory}">
+								<f:selectItems value="#{userLoginC.subCategories}" />
+							</h:selectOneMenu>
+	                    </div>
+	                </div>
+	                
+	                <div class="form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h:commandButton id="btn-start-chat" styleClass="btn btn-primary" value="Login" action="#{userLoginC.createConversation}" disabled="#{empty userLogin.username}" />
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h:messages styleClass="form-control" id="messages" globalOnly="true" showSummary="true" showDetail="true" redisplay="false"/>
+                        </div>
+                    </div>
+	            </h:form>
+			</div>
+        </section>
+	
+	</body>
+</html>

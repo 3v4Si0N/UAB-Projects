@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Operator Chat</title>
+		<h:outputStylesheet library="css" name="bootstrap.min.css"/>
+		<h:outputStylesheet library="css" name="styles.css"/>
+		
+		<h:outputScript library="js" name="websockets.js" />
+		<h:outputScript library="js" name="jquery.js" />
+	</h:head>
+	
+	<body>
+	
+		<div class="container-fluid">
+			<div class="row justify-content-md-center">
+				
+				<aside class="col-xs-3 col-sm-3 col-md-3 col-lg-3 chatlist">
+					<h:form prependId="false">
+						<h3 class="text-center">Active conversations</h3>
+						<hr />
+						<h:panelGroup layout="block" rendered="#{operatorChat.getConversations().size() gt 0}">
+							<ul>
+								<ui:repeat var="conv" value="#{operatorChat.conversations}">
+									<li class="text-center">
+										<h:commandLink style="#{conv.conversationLinkStyle}"
+										value="#{conv.user}" action="#{operatorChatC.changeToConversation(conv)}">
+											<h:panelGroup rendered="#{conv.notifications gt 0}" styleClass="badge badge-secondary badge-notifications">
+												<h:outputText value="#{conv.notifications}" />
+											</h:panelGroup>
+											<f:ajax render="@all"></f:ajax>
+										</h:commandLink>
+									</li>
+								</ui:repeat>
+							</ul>
+						</h:panelGroup>
+						
+						<h:outputText rendered="#{operatorChat.getConversations().size() eq 0}" value="There are no active conversations" />
+						
+						<h:commandButton id="refresh-convs" style="display: none;" action="#{operatorChatC.refreshConversations}">
+							<f:ajax render="@form"></f:ajax>
+						</h:commandButton>
+						
+						<h:commandButton id="add-notification" style="display: none;" action="#{operatorChatC.addNotification}">
+							<f:ajax render="@form"></f:ajax>
+						</h:commandButton>
+					</h:form>
+				</aside>
+
+				<section class="col-xs-9 col-sm-9 col-md-9 col-lg-8 chatbox">	
+					<h:form prependId="false">
+						<div id="history" class="chatlogs">
+							<h:panelGroup layout="block" rendered="#{operatorChat.getHistory().size() gt 0}">
+								<ui:repeat var="msg" value="#{operatorChat.history}">
+									<h:panelGroup layout="block" styleClass="row chat #{msg.clientType}">
+						 				<h:graphicImage styleClass="client-photo" value="resources/img/#{msg.clientType}.png" />
+						 				<h:outputText styleClass="chat-message" value="#{msg.message}" />
+						 			</h:panelGroup>
+								</ui:repeat>
+							</h:panelGroup>
+						</div>
+			        </h:form>
+		            
+		            <h:form prependId="false" class="chat-form">
+		                <textarea id="messageToSend" />
+		                <h:commandButton styleClass="btn btn-primary" value="Send" onclick="sendChatMessage(); return false;" />
+		                <h:inputHidden id="channelID" value="#{operatorLogin.operatorId}"></h:inputHidden>
+		                <h:inputHidden id="username" value="#{operatorLogin.username}"></h:inputHidden>
+		                <h:inputHidden id="clientType" value="operator"></h:inputHidden>
+		            </h:form>
+				</section>
+				
+			</div>
+        </div>
+	
+	</body>
+</html>

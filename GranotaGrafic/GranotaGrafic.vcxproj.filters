@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\Extras.cpp" />
+    <ClCompile Include="src\GestioResultats.cpp" />
+    <ClCompile Include="src\Joc.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\Principal.cpp" />
+    <ClCompile Include="src\lib\animaciones.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\debug.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\event.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\Grafic.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\image_png.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\keyboard.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\mouse.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\sound.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\sprites.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\stb_vorbis.c">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\video.cpp">
+      <Filter>lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Area.cpp" />
+    <ClCompile Include="src\Cova.cpp" />
+    <ClCompile Include="src\Granota.cpp" />
+    <ClCompile Include="src\Pantalla.cpp" />
+    <ClCompile Include="src\Vehicle.cpp" />
+    <ClCompile Include="src\Carriles.cpp" />
+    <ClCompile Include="src\ColaVehiclesCarril.cpp" />
+    <ClCompile Include="src\Mosca.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Extras.h" />
+    <ClInclude Include="src\GestioResultats.h" />
+    <ClInclude Include="src\Joc.h" />
+    <ClInclude Include="src\Menu.h" />
+    <ClInclude Include="src\lib\animaciones.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\debug.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\event.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\Grafic.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\image_png.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\keyboard.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\keyboard_sdl.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\libreria.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\mouse.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\sound.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\sprites.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\stb_vorbis.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lib\video.h">
+      <Filter>lib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Area.h" />
+    <ClInclude Include="src\Cova.h" />
+    <ClInclude Include="src\Granota.h" />
+    <ClInclude Include="src\Pantalla.h" />
+    <ClInclude Include="src\Vehicle.h" />
+    <ClInclude Include="src\Carriles.h" />
+    <ClInclude Include="src\ColaVehiclesCarril.h" />
+    <ClInclude Include="src\Mosca.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="lib">
+      <UniqueIdentifier>{38647d23-63f3-4d6f-bc53-a152a3948d7c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

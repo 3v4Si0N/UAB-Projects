@@ -1,2 +1,7 @@
 
 *.class
+*.obj
+*.log
+*.tlog
+*.idb
+*.pdb

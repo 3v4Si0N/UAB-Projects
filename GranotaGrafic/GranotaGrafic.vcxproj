@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F407CF84-8A16-449B-A38C-5CB3FA30FC31}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GranotaSessio1</RootNamespace>
+    <ProjectName>GranotaGrafic</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)\extlibs\SDL\include;$(ProjectDir)\extlibs\libpng;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\extlibs;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)\Program</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)\extlibs\SDL\include;$(ProjectDir)\extlibs\libpng;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\extlibs;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)\Program</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>freetype.lib;libpng.lib;SDL2.lib;SDL2main.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>freetype.lib;libpng.lib;SDL2.lib;SDL2main.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Area.cpp" />
+    <ClCompile Include="src\Carriles.cpp" />
+    <ClCompile Include="src\ColaVehiclesCarril.cpp" />
+    <ClCompile Include="src\Cova.cpp" />
+    <ClCompile Include="src\Extras.cpp" />
+    <ClCompile Include="src\GestioResultats.cpp" />
+    <ClCompile Include="src\Granota.cpp" />
+    <ClCompile Include="src\Joc.cpp" />
+    <ClCompile Include="src\lib\animaciones.cpp" />
+    <ClCompile Include="src\lib\debug.cpp" />
+    <ClCompile Include="src\lib\event.cpp" />
+    <ClCompile Include="src\lib\Grafic.cpp" />
+    <ClCompile Include="src\lib\image_png.cpp" />
+    <ClCompile Include="src\lib\keyboard.cpp" />
+    <ClCompile Include="src\lib\mouse.cpp" />
+    <ClCompile Include="src\lib\sound.c" />
+    <ClCompile Include="src\lib\sprites.cpp" />
+    <ClCompile Include="src\lib\stb_vorbis.c" />
+    <ClCompile Include="src\lib\video.cpp" />
+    <ClCompile Include="src\Menu.cpp" />
+    <ClCompile Include="src\Mosca.cpp" />
+    <ClCompile Include="src\Pantalla.cpp" />
+    <ClCompile Include="src\Principal.cpp" />
+    <ClCompile Include="src\Vehicle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Area.h" />
+    <ClInclude Include="src\Carriles.h" />
+    <ClInclude Include="src\ColaVehiclesCarril.h" />
+    <ClInclude Include="src\Cova.h" />
+    <ClInclude Include="src\Extras.h" />
+    <ClInclude Include="src\GestioResultats.h" />
+    <ClInclude Include="src\Granota.h" />
+    <ClInclude Include="src\Joc.h" />
+    <ClInclude Include="src\lib\animaciones.h" />
+    <ClInclude Include="src\lib\debug.h" />
+    <ClInclude Include="src\lib\event.h" />
+    <ClInclude Include="src\lib\Grafic.h" />
+    <ClInclude Include="src\lib\image_png.h" />
+    <ClInclude Include="src\lib\keyboard.h" />
+    <ClInclude Include="src\lib\keyboard_sdl.h" />
+    <ClInclude Include="src\lib\libreria.h" />
+    <ClInclude Include="src\lib\mouse.h" />
+    <ClInclude Include="src\lib\sound.h" />
+    <ClInclude Include="src\lib\sprites.h" />
+    <ClInclude Include="src\lib\stb_vorbis.h" />
+    <ClInclude Include="src\lib\video.h" />
+    <ClInclude Include="src\Menu.h" />
+    <ClInclude Include="src\Mosca.h" />
+    <ClInclude Include="src\Pantalla.h" />
+    <ClInclude Include="src\Vehicle.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,296 @@
+@font-face
+{
+	font-family: BebasNeue;
+	src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face
+{
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+body
+{
+	background: #e3e3e3;
+}
+
+@media only screen and (min-width: 992px)
+{
+	body
+	{
+		margin: 0 100px 0 100px;
+		background: #e3e3e3;
+	}
+}
+
+header
+{
+	background-color: white;
+}
+
+footer
+{
+	background-color: #28bbff;
+}
+
+
+/*******  INDEX.HTML  ******/
+header img.img-entregas, header img.img-envios
+{
+	margin-top: 10px;
+}
+
+nav.navPrincipal
+{
+    background-color: #28bbff;
+}
+
+nav.navPrincipal button
+{
+    color: white;
+    border: none;
+    background: none;
+    margin-top: 9px;
+}
+
+nav.navPrincipal button.btnLogin:hover
+{
+    background-color: white;
+}
+
+.li-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.ul-dropdown-content {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 0px 0px 0px;
+}
+
+.ul-dropdown-content li
+{
+    list-style: none;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.ul-dropdown-content li a
+{
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    color: #333;
+    white-space: nowrap;
+    padding: 5px 12px 5px 12px;
+    margin-top: 5px;
+}
+
+.ul-dropdown-content li a:hover
+{
+    background-color: #28bbff;
+    text-decoration: none;
+}
+
+/* mostramos el menú desplegable al pasar el ratón por encima
+.li-dropdown:hover .ul-dropdown-content {
+    display: block;
+}*/
+
+.dropdown:hover .dropdown-menu
+{
+	display: block;
+}
+
+.welcome
+{
+	padding-bottom: 8px;
+	border-bottom: 1px solid #28bbff;
+}
+
+.container-section
+{
+	background-color: white;
+}
+
+.container-section article
+{
+	margin-top: 30px;
+}
+
+.container-section article div.thumbnail
+{
+    border-bottom: 2px solid #28bbff;
+}
+
+.container-section article div.thumbnail:hover
+{
+	border: 1px solid #ff8125;
+}
+
+footer section h3
+{
+	font-family: BebasNeue;
+	font-size: 28px;
+}
+
+footer section ul li a
+{
+	color: white;
+	font-family: OpenSans;
+}
+
+footer .copyright
+{
+	top: 4px;
+}
+
+/* css para dispositivos que tengan un ancho de pantalla > a 768px (todos menos moviles)*/
+@media(max-width: 767px)
+{
+	nav.navPrincipal input.search
+	{
+		width: 150px;
+		background: url(../images/lupa.png) no-repeat 115px 5px;
+		background-color: white;
+		border-radius: 10px 10px 10px 10px;
+	}
+}
+
+
+@media(min-width: 768px) and (max-width: 1549px)
+{
+	nav.navPrincipal input.search
+	{
+		width: 200px;
+		background: url(../images/lupa.png) no-repeat 165px 5px;
+		background-color: white;
+		border-radius: 10px 10px 10px 10px;
+	}
+}
+
+@media(min-width: 1550px)
+{
+	nav.navPrincipal input.search
+	{
+		width: 450px;
+		background: url(../images/lupa.png) no-repeat 415px 5px;
+		background-color: white;
+		border-radius: 10px 10px 10px 10px;
+	}
+}
+
+@media (max-width: 1800px)
+{
+	.welcome
+	{
+		font-size: 18px;
+	}
+}
+
+
+/*******  REGISTER.HTML  ******/
+section form.thumbnail, aside form.thumbnail
+{
+	border-radius: 15px 15px 15px 15px;
+	margin-top: 30px;
+}
+
+section form.thumbnail:hover, aside form.thumbnail:hover
+{
+	border: 2px solid #ff8125;
+}
+
+section h4.h4-register
+{
+	font-family: BebasNeue;
+	font-size: 28px;
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+	padding-bottom: 6px;
+}
+
+section.section-register
+{
+	background-color: white;
+}
+
+
+/*******  PRODUCT.HTML  ******/
+h3.precio
+{
+	color: #28bbff;
+}
+
+ul.caption li
+{
+	list-style: none;
+}
+
+div.acordeon
+{
+	padding: 0;
+}
+
+ul.product-lists
+{
+	font-family: OpenSans;
+}
+
+
+/******* USER PANEL ********/
+.container-user
+{
+    background: white;
+}
+
+
+/*******  REGISTER.HTML  ******/
+aside.purchases
+{
+	border-radius: 15px 15px 15px 15px;
+    border: 1px solid #ddd;
+    padding-bottom: 20px;
+	margin-top: 30px;
+}
+
+aside.purchases:hover
+{
+	border: 2px solid #ff8125;
+}
+
+
+/*******  4dM1np4N3l.html  ******/
+form.admin-form
+{
+	top: 200px;
+}
+
+
+/***** CARRITO ******/
+.table tbody tr td, .table tfoot tr td
+{
+    vertical-align: middle;
+}
+
+a span.product-count
+{
+	border-radius: 20px;
+	padding: 0 4px 0px 4px;
+	color: #ff8125;
+	background: white;
+}
+
+
+/****** SEARCH ENGINE *****/
+.search-section
+{
+    background: white;
+}

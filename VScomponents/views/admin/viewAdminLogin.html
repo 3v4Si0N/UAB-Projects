@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Admin Login</title>
+		<link rel="stylesheet" href="/VScomponents/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/VScomponents/css/styles.css">
+
+    <script src="/VScomponents/js/jquery.js"></script>
+    <script src="/VScomponents/js/bootstrap.min.js"></script>
+    <script src="/VScomponents/js/functions.js"></script>
+</head>
+<body>
+	<section class="container-fluid">
+		<div class="row">
+			<form enctype="multipart/form-data" method="POST" action="access" class="col-xs-offset-2 col-xs-8 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4 thumbnail form-horizontal admin-form">
+                <h4 class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8 text-center h4-register">Admin Login</h4>
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+                        <input type="text" class="form-control" name="adminUser" placeholder="Username">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-8 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+                        <input type="password" class="form-control" name="adminPassword" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-success">Sign in</button>
+                    </div>
+                </div>
+            </form>
+		</div>
+	</section>
+</body>
+</html>

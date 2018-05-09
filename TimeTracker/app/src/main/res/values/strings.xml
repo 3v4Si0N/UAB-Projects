@@ -1,0 +1,57 @@
+<resources>
+    <!-- Titulos de activitys -->
+    <string name="app_name">TimeTracker</string>
+    <string name="title_activity_edit">Editar</string>
+    <string name="title_activity_nuevo">Nuevo/a</string>
+    <string name="title_activity_generar_informe">Generar informe</string>
+
+    <string name="action_parar">Parar todo</string>
+    <string name="action_borrar">Eliminar todo</string>
+
+    <!-- EditarActivity -->
+    <string name="prompt_nombre">Nombre</string>
+    <string name="prompt_descripcion">Descripcion</string>
+    <string name="button_guardar">Guardar</string>
+
+    <!-- NuevaActividadActivity -->
+    <string name="radio_tarea">Tarea</string>
+    <string name="radio_proyecto">Proyecto</string>
+    <string name="button_aceptar">Aceptar</string>
+
+    <!-- GenerarInformeActivity -->
+    <string name="radio_breve">Breve</string>
+    <string name="radio_detallado">Detallado</string>
+    <string name="prompt_desde">Desde</string>
+    <string name="prompt_hasta">Hasta</string>
+    <string name="radio_txt">Texto</string>
+    <string name="radio_html">Web</string>
+    <string name="button_generar">Generar</string>
+
+    <!-- IntervalosActivity -->
+    <string name="title_activity_intervalos">Intervalos</string>
+
+    <!-- menu preferencias de tarea y proyecto -->
+    <string name="prompt_editar">Editar</string>
+    <string name="prompt_borrar">Borrar</string>
+    <string name="prompt_detalles">Detalles</string>
+
+    <!-- Spinner NuevaActividad -->
+    <string-array name="tipo_actividad">
+        <item>Proyecto</item>
+        <item>Tarea básica</item>
+        <item>Tarea programada</item>
+        <item>Tarea preprogramada</item>
+    </string-array>
+
+    <!-- list_row_tareas -->
+    <string name="title">title</string>
+    <string name="duracion">0d0h0m0s</string>
+    <string name="imagen_play">Imagen para arrancar o parar una tarea</string>
+
+    <!-- list_row_proyectos -->
+    <string name="imagen_descripcion">Carpeta de un proyecto</string>
+
+    <!-- list_row_intervalos -->
+    <string name="fechaInicial">09 dic 2016 20:34:08</string>
+    <string name="fechaFinal">09 dic 2016 22:48:37</string>
+</resources>

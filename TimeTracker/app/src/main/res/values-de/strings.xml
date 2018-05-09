@@ -1,0 +1,57 @@
+<resources>
+    <!-- Titulos de activitys -->
+    <string name="app_name">TimeTracker</string>
+    <string name="title_activity_edit">Bearbeiten</string>
+    <string name="title_activity_nuevo">Neu</string>
+    <string name="title_activity_generar_informe">Bericht erstellen</string>
+
+    <string name="action_parar">Stoppen Sie alle</string>
+    <string name="action_borrar">Entfernen alle</string>
+
+    <!-- EditarActivity -->
+    <string name="prompt_nombre">Name</string>
+    <string name="prompt_descripcion">Beschreibung</string>
+    <string name="button_guardar">Speichern</string>
+
+    <!-- NuevaActividadActivity -->
+    <string name="radio_tarea">Task</string>
+    <string name="radio_proyecto">Projekt</string>
+    <string name="button_aceptar">OK</string>
+
+    <!-- GenerarInformeActivity -->
+    <string name="radio_breve">Short</string>
+    <string name="radio_detallado">Detaillierte</string>
+    <string name="prompt_desde">Von</string>
+    <string name="prompt_hasta">Oben</string>
+    <string name="radio_txt">Text</string>
+    <string name="radio_html">Web</string>
+    <string name="button_generar">Erzeugen</string>
+
+    <!-- IntervalosActivity -->
+    <string name="title_activity_intervalos">Intervalle</string>
+
+    <!-- menu preferencias de tarea y proyecto -->
+    <string name="prompt_editar">Bearbeiten</string>
+    <string name="prompt_borrar">Löschen</string>
+    <string name="prompt_detalles">Details</string>
+
+    <!-- Spinner NuevaActividad -->
+    <string-array name="tipo_actividad">
+        <item>Projekt</item>
+        <item>Einfache Aufgabe</item>
+        <item>Geplante Aufgabe</item>
+        <item>Task voreingestellten</item>
+    </string-array>
+
+    <!-- list_row_tareas -->
+    <string name="title">titule</string>
+    <string name="duracion">0d0h0m0s</string>
+    <string name="imagen_play">Bild zu starten oder eine Aufgabe zu stoppen</string>
+
+    <!-- list_row_proyectos -->
+    <string name="imagen_descripcion">ein Projektordner</string>
+
+    <!-- list_row_intervalos -->
+    <string name="fechaInicial">09 dez 2016 20:34:08</string>
+    <string name="fechaFinal">09 dez 2016 22:48:37</string>
+</resources>

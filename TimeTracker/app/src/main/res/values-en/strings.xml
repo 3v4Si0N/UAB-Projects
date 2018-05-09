@@ -1,0 +1,57 @@
+<resources>
+    <!-- Titulos de activitys -->
+    <string name="app_name">TimeTracker</string>
+    <string name="title_activity_edit">Edit</string>
+    <string name="title_activity_nuevo">New</string>
+    <string name="title_activity_generar_informe">Generate report</string>
+
+    <string name="action_parar">Stop all</string>
+    <string name="action_borrar">Delete all</string>
+
+    <!-- EditarActivity -->
+    <string name="prompt_nombre">Name</string>
+    <string name="prompt_descripcion">Description</string>
+    <string name="button_guardar">Save</string>
+
+    <!-- NuevaActividadActivity -->
+    <string name="radio_tarea">Task</string>
+    <string name="radio_proyecto">Project</string>
+    <string name="button_aceptar">Accept</string>
+
+    <!-- GenerarInformeActivity -->
+    <string name="radio_breve">Brief</string>
+    <string name="radio_detallado">Full</string>
+    <string name="prompt_desde">From</string>
+    <string name="prompt_hasta">To</string>
+    <string name="radio_txt">Text</string>
+    <string name="radio_html">Web</string>
+    <string name="button_generar">Generate</string>
+
+    <!-- IntervalosActivity -->
+    <string name="title_activity_intervalos">Intervals</string>
+
+    <!-- menu preferencias de tarea y proyecto -->
+    <string name="prompt_editar">Edit</string>
+    <string name="prompt_borrar">Delete</string>
+    <string name="prompt_detalles">Details</string>
+
+    <!-- Spinner NuevaActividad -->
+    <string-array name="tipo_actividad">
+        <item>Project</item>
+        <item>Basic task</item>
+        <item>Programmed task</item>
+        <item>Preprogrammed task</item>
+    </string-array>
+
+    <!-- list_row_tareas -->
+    <string name="title">title</string>
+    <string name="duracion">0d0h0m0s</string>
+    <string name="imagen_play">Image to start or to stop a task</string>
+
+    <!-- list_row_proyectos -->
+    <string name="imagen_descripcion">Folder project</string>
+
+    <!-- list_row_intervalos -->
+    <string name="fechaInicial">09 Dec 2016 20:34:08</string>
+    <string name="fechaFinal">09 Dec 2016 22:48:37</string>
+</resources>

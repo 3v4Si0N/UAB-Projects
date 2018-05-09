@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  listrow  -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="5dip">
+
+        <ImageView
+            android:id="@+id/list_row_image"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_folder_black_48dp"
+            android:contentDescription="@string/imagen_descripcion" />
+
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/thumbnail2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="5dip"
+        android:orientation="vertical">
+
+        <!-- titulo de la categoria -->
+        <TextView
+            android:id="@+id/list_row_title_proyecto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/list_row_duracion_proyecto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/duracion"
+            android:textColor="#040404"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    </RelativeLayout>

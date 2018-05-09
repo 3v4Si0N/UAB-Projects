@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_generar_informe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="timetracker.app.practicads.com.timetracker.GenerarInformeActivity">
+
+    <RadioGroup
+        android:id="@+id/radioInforme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/radioBreve">
+        <RadioButton
+            android:text="@string/radio_breve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioBreve" />
+
+        <RadioButton
+            android:text="@string/radio_detallado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:id="@+id/radioDetallado" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/fechas_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/radioInforme"
+        android:layout_alignParentStart="true">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/fecha_desde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_desde"
+                android:inputType="text"
+                android:maxLines="1"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/fecha_hasta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_hasta"
+                android:maxLines="10"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioFormato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fechas_form"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:checkedButton="@+id/radioTxt">
+        <RadioButton
+            android:text="@string/radio_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioTxt" />
+
+        <RadioButton
+            android:text="@string/radio_html"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:id="@+id/radioHtml" />
+    </RadioGroup>
+
+    <Button
+        android:text="@string/button_generar"
+        android:textColor="#ffff"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:id="@+id/buttonGenerar"
+        android:background="@drawable/borde_redondo_button"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="34dp"
+        android:layout_below="@+id/radioFormato"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

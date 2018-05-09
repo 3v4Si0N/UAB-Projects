@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  listrow  -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true">
+
+        <!-- fecha inicial -->
+        <TextView
+            android:id="@+id/list_row_initial_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fechaInicial"
+            android:textColor="#040404"
+            android:typeface="sans"
+            android:textSize="18sp"/>
+
+        <!-- fecha final -->
+        <TextView
+            android:id="@+id/list_row_final_date"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fechaFinal"
+            android:textColor="#040404"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <!-- duracion -->
+    <TextView
+        android:id="@+id/list_row_duracion"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/duracion"
+        android:textColor="#040404"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="250dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>

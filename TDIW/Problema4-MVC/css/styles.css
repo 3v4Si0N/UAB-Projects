@@ -1,0 +1,34 @@
+h2
+{
+	color: darkblue;
+}
+
+h1, h3
+{
+	font-style: italic;
+}
+
+header p
+{
+	font-family: "courier new";
+}
+
+.fancy
+{
+	font-family: Times;
+}
+
+header.fancy
+{
+	color: magenta;
+}
+
+section.statistics header h3
+{
+	color: red;
+}
+
+footer p
+{
+	margin-top: 70px;
+}

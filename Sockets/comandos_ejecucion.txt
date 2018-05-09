@@ -1,0 +1,2 @@
+strace -e network ./fwServer -p 9999
+strace -e network ./fwClient -p 9999 -h localhost
